@@ -907,3 +907,137 @@ footer {
     height: 100%;
     border: 0;
 }
+/* ==========================================================================
+   ADAPTACIÓN PARA COMPUTADORAS Y PANTALLAS GRANDES (DESKTOP)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    /* Contenedores y secciones generales */
+    .container {
+        padding: 0 2rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Menú de navegación en PC (oculta botón móvil y despliega links) */
+    .mobile-menu-btn {
+        display: none !important;
+    }
+
+    .nav-links {
+        position: static !important;
+        display: flex !important;
+        flex-direction: row !important;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        gap: 1.2rem;
+        width: auto !important;
+    }
+
+    .nav-links a {
+        background: transparent !important;
+        width: auto !important;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-links a.btn-nav {
+        background: linear-gradient(135deg, var(--brand-whatsapp) 0%, #10b981 100%) !important;
+        color: #ffffff !important;
+        border-radius: var(--radius-full);
+        padding: 0.5rem 1.2rem;
+    }
+
+    /* Transformar listas de 1 columna a grillas de 2 y 3 columnas en PC */
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+    }
+
+    /* Tarjetas de contacto y cotizadores en dos columnas */
+    .contact-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Sección de la Podóloga en formato horizontal (Imagen a un lado, texto al otro) */
+    .podologa-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        padding: 2.5rem;
+    }
+
+    .podologa-img-wrapper {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .podologa-img-frame {
+        height: 380px;
+    }
+
+    .podologa-info {
+        flex: 1.2;
+    }
+
+    .podologa-info h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Hero Sections amplias */
+    .hero, .services-hero, .coming-soon-hero {
+        padding: 4.5rem 2rem;
+        margin: 1rem auto;
+        max-width: 1140px;
+    }
+
+    .hero h1, .services-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p, .services-hero p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-btns {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn-primary, .btn-secondary, .btn-submit {
+        width: auto;
+        min-width: 220px;
+    }
+
+    /* Footer estructurado en 3 columnas en PC */
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Grillas principales a 3 columnas para secciones de servicios o casos de éxito */
+    .grid-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
