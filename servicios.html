@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Clínicos Especializados | Podología VivA</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png?v=1" type="image/png">
+    <meta name="description" content="Servicios clínicos de podología profesional en Ñuñoa y a domicilio: uña encarnada, pie diabético, hongos y más.">
+</head>
+<body>
+
+    <!-- Header Top Bar -->
+    <header class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-socials">
+                <a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Podologiaviva" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Podología VivA Logo" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="casos_de_exito.html">Casos de Éxito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" class="nav-ig"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" target="_blank" rel="noopener noreferrer" class="btn-nav"><i class="fa-brands fa-whatsapp"></i> Agendar Cita</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="services-hero">
+        <div class="hero-overlay"></div>
+        <div class="container services-hero-content">
+            <h1>Catálogo de Servicios Clínicos</h1>
+            <p>Tratamientos especializados con instrumental 100% esterilizado, enfocados en aliviar el dolor, sanar patologías y prevenir complicaciones.</p>
+        </div>
+    </section>
+
+    <!-- Filtro de Servicios -->
+    <section class="section">
+        <div class="container">
+            <div class="category-filter-wrapper">
+                <p class="filter-label"><i class="fa-solid fa-filter"></i> Filtrar servicios por categoría:</p>
+                <div class="filter-buttons">
+                    <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+                    <button type="button" class="filter-btn" data-filter="preventivo">Preventivo</button>
+                    <button type="button" class="filter-btn" data-filter="patologico">Tratamientos / Patologías</button>
+                    <button type="button" class="filter-btn" data-filter="especial">Atención Especializada</button>
+                </div>
+            </div>
+
+            <div class="grid-cards" id="servicesGrid">
+                <details class="card card-accordion service-item" data-category="preventivo" open>
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                            <h3>Podología Clínica Preventiva</h3>
+                            <p class="summary-desc">Higiene, corte técnico y perfilado completo.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Evaluación inicial clínica, corte técnico de láminas ungueales, desbastado de durezas/hiperqueratosis, limpieza de surcos y humectación profunda con masaje relajante.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Duración aprox.: 45 min</li>
+                            <li><i class="fa-solid fa-check"></i> Recomendado cada 30 días</li>
+                        </ul>
+                        <a href="https://wa.me/56949819428?text=Hola,%20me%20interesa%20agendar%20una%20Podología%20Clínica%20Preventiva" class="btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Agendar este servicio</a>
+                    </div>
+                </details>
+
+                <details class="card card-accordion service-item" data-category="patologico">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                            <h3>Uña Encarnada (Onicocriptosis)</h3>
+                            <p class="summary-desc">Desencarnación y alivio inmediato.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Extracción técnica de la espícula incrustada sin dolor extremo, curación antiséptica, aplicación de apósito estéril y plan de reeducación ungueal para prevenir recurrencias.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Tratamiento de urgencia o consulta programada</li>
+                            <li><i class="fa-solid fa-check"></i> Incluye seguimiento post-procedimiento</li>
+                        </ul>
+                        <a href="https://wa.me/56949819428?text=Hola,%20necesito%20atención%20por%20Uña%20Encarnada" class="btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+                    </div>
+                </details>
+
+                <details class="card card-accordion service-item" data-category="patologico">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-microscope"></i></div>
+                            <h3>Tratamiento de Hongos (Onicomicosis)</h3>
+                            <p class="summary-desc">Fresado profundo y tratamiento tópico.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Limpieza del canal ungueal, desbastado/fresado mecánico de la uña engrosada o dañada por micosis y orientación clínica para la aplicación de antimicóticos específicos.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Recupera la estética y salud de la uña</li>
+                            <li><i class="fa-solid fa-check"></i> Control periódico recomendado</li>
+                        </ul>
+                        <a href="https://wa.me/56949819428?text=Hola,%20quisiera%20evaluar%20tratamiento%20para%20Hongos%20en%20las%20uñas" class="btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Solicitar Evaluación</a>
+                    </div>
+                </details>
+
+                <details class="card card-accordion service-item" data-category="especial">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                            <h3>Atención Pie Diabético</h3>
+                            <p class="summary-desc">Atención de alto cuidado y prevención de úlceras.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Evaluación neurológica y vascular preventiva. Procedimientos ultra-seguros sin riesgo de heridas ni corte excesivo, asegurando el óptimo resguardo de la salud del paciente diabético.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Protocolos de máxima bioseguridad</li>
+                            <li><i class="fa-solid fa-check"></i> Detección precoz de fisuras o zonas de presión</li>
+                        </ul>
+                        <a href="https://wa.me/56949819428?text=Hola,%20necesito%20agendar%20atención%20para%20Pie%20Diabético" class="btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Agendar Atención Especializada</a>
+                    </div>
+                </details>
+
+                <details class="card card-accordion service-item" data-category="especial">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-person-cane"></i></div>
+                            <h3>Atención Adulto Mayor</h3>
+                            <p class="summary-desc">Cuidado con la máxima paciencia y dedicación.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Atención amigable orientada a devolver el confort y la movilidad en adultos mayores. Tratamiento suave de uñas engrosadas (onicogrifosis), helomas y piel seca.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Disponible en Consulta Ñuñoa y a Domicilio</li>
+                            <li><i class="fa-solid fa-check"></i> Ideal para mejorar el bienestar diario</li>
+                        </ul>
+                        <a href="https://wa.me/56949819428?text=Hola,%20quisiera%20agendar%20atención%20podológica%20para%20un%20Adulto%20Mayor" class="btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Reservar Cita</a>
+                    </div>
+                </details>
+
+                <details class="card card-accordion service-item" data-category="preventivo">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+                            <h3>Tratamiento de Helomas y Callosidades</h3>
+                            <p class="summary-desc">Remoción indolora de callos dolorosos.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Enucleación y retiro de helomas interdigitales o de plantar que generan dolor intenso al caminar, acompañados del pulido y suavizado de áreas con roce frecuente.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Alivio de la molestia de inmediato</li>
+                            <li><i class="fa-solid fa-check"></i> Asesoría sobre calzado adecuado</li>
+                        </ul>
+                        <a href="https://wa.me/56949819428?text=Hola,%20necesito%20tratamiento%20para%20Helomas/Callos" class="btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotizador -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Cotizador Rápido de Atención</h2>
+            <p class="section-subtitle">Selecciona la modalidad e ingresa tus requerimientos para obtener una estimación inmediata</p>
+
+            <div class="form-container widget-calculator">
+                <div class="form-group">
+                    <label for="calcModalidad"><i class="fa-solid fa-house-medical"></i> Modalidad de Atención:</label>
+                    <select id="calcModalidad">
+                        <option value="consulta">Atención en Consulta Clínica (Ñuñoa)</option>
+                        <option value="domicilio">Atención a Domicilio (Santiago)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="calcServicio"><i class="fa-solid fa-stethoscope"></i> Tipo de Atención Principal:</label>
+                    <select id="calcServicio">
+                        <option value="preventiva">Podología Clínica Preventiva / Mantención</option>
+                        <option value="encarnada">Uña Encarnada (Tratamiento de Urgencia)</option>
+                        <option value="hongos">Tratamiento de Hongos (Onicomicosis)</option>
+                        <option value="diabetico">Atención Pie Diabético / Adulto Mayor</option>
+                    </select>
+                </div>
+
+                <div class="calculator-result" id="calcResultBox">
+                    <p class="result-title">Estimación de Atención:</p>
+                    <div class="result-value" id="calcPrice">Consulta Ñuñoa</div>
+                    <p class="result-note" id="calcNote">Servicio en Box Clínico con instrumental esterilizado.</p>
+                </div>
+
+                <a href="#" id="calcWhatsappLink" target="_blank" rel="noopener noreferrer" class="btn-primary btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Confirmar y Agendar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <!-- Columna 1: Marca y Descripción -->
+            <div class="footer-col">
+                <h3>PodologíaVivA</h3>
+                <p>Especialistas titulados comprometidos con tu salud, movilidad y calidad de vida diaria.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-links" style="list-style: none;">
+                    <li><a href="#inicio" style="color: inherit; text-decoration: none;">Inicio</a></li>
+                    <li><a href="#servicios" style="color: inherit; text-decoration: none;">Servicios Clínicos</a></li>
+                    <li><a href="#casos" style="color: inherit; text-decoration: none;">Casos de Éxito</a></li>
+                    <li><a href="#cursos" style="color: inherit; text-decoration: none;">Cursos</a></li>
+                    <li><a href="#contacto" style="color: inherit; text-decoration: none;">Contacto y Citas</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto Directo (Botones Adaptados) -->
+            <div class="footer-col">
+                <h4>Contacto Directo</h4>
+                <div class="footer-contact-buttons">
+                    <a href="https://maps.google.com" target="_blank" class="contact-btn-social phone-btn">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Alcalde Jorge Monckeberg 1009, Ñuñoa</span>
+                    </a>
+                    
+                    <a href="mailto:podologiavivarm@gmail.com" class="contact-btn-social email-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>podologiavivarm@gmail.com</span>
+                    </a>
+                    
+                    <a href="https://wa.me/56949819428" target="_blank" class="contact-btn-social whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+56 9 4981 9428</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 PodologíaVivA. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Reserva por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Reserva por WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

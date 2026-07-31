@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podología VivA | Salud y Bienestar en Ñuñoa</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png?v=1" type="image/png">
+    <meta name="description" content="Podología profesional a domicilio y en consulta clínica en Ñuñoa. Especialistas en uña encarnada, hongos y adulto mayor.">
+</head>
+<body>
+
+    <!-- Header Top Bar -->
+    <header class="top-bar">
+        <div class="container top-bar-content">
+
+            <div class="top-socials">
+                <a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Podologiaviva" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Podología VivA Logo" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="casos_de_exito.html">Casos de Éxito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" class="nav-ig"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" target="_blank" rel="noopener noreferrer" class="btn-nav"><i class="fa-brands fa-whatsapp"></i> Agendar Cita</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Banner Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="badge"><i class="fa-solid fa-shield-halved"></i> Atención Clínica & Domiciliaria</span>
+            <h1>Cuidado Podológico Profesional y Avanzado</h1>
+            <p>Tratamientos especializados para la salud, prevención y estética de tus pies en Ñuñoa y Santiago.</p>
+
+            <div class="hero-btns">
+                <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" class="btn-primary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Reservar por WhatsApp</a>
+                <a href="servicios.html" class="btn-secondary">Ver Todos los Servicios</a>
+            </div>
+        </div>
+    </section>
+    <section class="section container" id="ubicacion">
+    <h2 class="section-title">Nuestra Ubicación</h2>
+    <p class="section-subtitle">Visítanos en nuestra consulta en Ñuñoa</p>
+    
+    <div class="map-card">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.138407886121!2d-70.5960!3d-33.4580!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf0000000001%3A0x0!2sAv.+Alcalde+Jorge+Monckeberg+1009%2C+%C3%91u%C3%B1oa%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1700000000000!5m2!1es-419!2scl" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="map-info">
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Alcalde Jorge Monckeberg 1009, Ñuñoa</strong></p>
+            <a href="https://maps.google.com/?q=Alcalde+Jorge+Monckeberg+1009,+Nunoa" target="_blank" class="btn-primary" style="margin-top: 0.8rem; text-decoration: none;">
+                <i class="fas fa-directions"></i> Abrir en Google Maps
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Asistente Inteligente de Agendamiento -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="form-container smart-assistant-card">
+                <h2 class="section-title">¿Necesitas contactarnos o agendar?</h2>
+                <p class="section-subtitle">Responde un par de preguntas rápidas para enviarte la información exacta por WhatsApp</p>
+
+                <!-- PASO 1: Motivo -->
+                <div class="assistant-step">
+                    <label class="assistant-label"><i class="fa-solid fa-1"></i> Selecciona el motivo de tu consulta:</label>
+                    <div class="assistant-options" id="motivoOptions">
+                        <button type="button" class="opt-btn" data-motivo="dolor">
+                            <i class="fa-solid fa-kit-medical"></i> Tengo dolor / Uña encarnada (Urgencia)
+                        </button>
+                        <button type="button" class="opt-btn" data-motivo="preventiva">
+                            <i class="fa-solid fa-stethoscope"></i> Evaluación general / Limpieza preventiva
+                        </button>
+                        <button type="button" class="opt-btn" data-motivo="adulto_mayor">
+                            <i class="fa-solid fa-house-user"></i> Necesito atención para Adulto Mayor / Domicilio
+                        </button>
+                        <button type="button" class="opt-btn" data-motivo="otro">
+                            <i class="fa-solid fa-ellipsis-h"></i> Otro motivo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PASO 2A: Modalidad -->
+                <div class="assistant-step assistant-substep" id="stepModalidad" style="display: none;">
+                    <label class="assistant-label"><i class="fa-solid fa-2"></i> Selecciona la modalidad de atención:</label>
+                    <div class="assistant-options" id="modalidadOptions">
+                        <button type="button" class="opt-btn" data-modalidad="consulta">
+                            <i class="fa-solid fa-clinic-medical"></i> En Consulta (Ñuñoa)
+                        </button>
+                        <button type="button" class="opt-btn" data-modalidad="domicilio">
+                            <i class="fa-solid fa-car"></i> A Domicilio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PASO 2B: Especificar "Otro" -->
+                <div class="assistant-step assistant-substep" id="stepOtroTexto" style="display: none;">
+                    <label class="assistant-label"><i class="fa-solid fa-pen-to-square"></i> Detalla brevemente lo que necesitas:</label>
+                    <input type="text" id="inputOtroDetalle" class="assistant-input" placeholder="Ej: Consulta sobre tratamiento para hongos o heloma interdigital...">
+                </div>
+
+                <!-- PASO 3: Dirección -->
+                <div class="assistant-step assistant-substep" id="stepDireccion" style="display: none;">
+                    <label class="assistant-label"><i class="fa-solid fa-location-dot"></i> Introduce la dirección para la visita:</label>
+                    <input type="text" id="inputDireccion" class="assistant-input" placeholder="Ej: Av. Grecia 1234, Ñuñoa / Providencia...">
+                </div>
+
+                <!-- BOTÓN ACCIÓN -->
+                <div class="assistant-action" id="stepBoton" style="display: none;">
+                    <a href="#" id="btnSmartBooking" target="_blank" rel="noopener noreferrer" class="btn-primary btn-block">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Podóloga -->
+    <section class="section-podologa">
+        <div class="container">
+            <div class="podologa-card">
+                <div class="podologa-img-wrapper">
+                    <div class="podologa-img-frame">
+                        <img src="podologa.jpeg" alt="Podóloga Clínica Viviana" class="podologa-img">
+                    </div>
+                    <div class="podologa-badge-mobile">
+                        <i class="fa-solid fa-user-nurse"></i> Podóloga Titulada
+                    </div>
+                </div>
+
+                <div class="podologa-info">
+                    <span class="badge">Especialista Clínica</span>
+                    <h2>Conoce a nuestra Podóloga</h2>
+                    <p class="podologa-desc">
+                        Profesional certificada comprometida con la prevención, tratamiento y salud integral de tus pies en consulta y a domicilio.
+                    </p>
+                    <ul class="podologa-highlights">
+                        <li><i class="fa-solid fa-circle-check"></i> Registro Minsal / Certificación profesional.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Protocolos de bioseguridad e instrumental esterilizado.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Atención personalizada y dedicada para niños, adultos y adultos mayores.</li>
+                    </ul>
+                    <div class="podologa-actions">
+                        <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar Consulta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modalidades -->
+    <section id="modalidades" class="section">
+        <div class="container">
+            <h2 class="section-title">Modalidades de Atención</h2>
+            <p class="section-subtitle">Adaptamos nuestros servicios a tus necesidades y comodidad</p>
+            
+            <div class="grid-cards">
+                <details class="card card-accordion">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-house-medical"></i></div>
+                            <h3>A Domicilio</h3>
+                            <p class="summary-desc">Atención en la tranquilidad de tu hogar.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Servicio ideal para adultos mayores, personas con movilidad reducida o agendas apretadas. Llevamos equipamiento e instrumental 100% esterilizado y sellado.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Cobertura en Ñuñoa y comunas cercanas.</li>
+                            <li><i class="fa-solid fa-check"></i> Protocolos rigurosos de bioseguridad.</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link-btn">Agendar Domicilio &rarr;</a>
+                    </div>
+                </details>
+
+                <details class="card card-accordion">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-hospital-user"></i></div>
+                            <h3>Consulta Ñuñoa</h3>
+                            <p class="summary-desc">Alcalde Jorge Monckeberg 1009</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Visítanos en nuestra consulta privada box clínico ubicada en <strong>Alcalde Jorge Monckeberg 1009, Ñuñoa</strong>. Entorno asistencial cómodo, seguro y equipado para la salud integral de tus pies.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Sillón podológico ergonómico.</li>
+                            <li><i class="fa-solid fa-check"></i> Instrumental 100% esterilizado.</li>
+                            <li><i class="fa-solid fa-location-dot"></i> Alcalde Jorge Monckeberg 1009, Ñuñoa.</li>
+                        </ul>
+                        <a href="https://maps.google.com/?q=Alcalde+Jorge+Monckeberg+1009,+Nunoa,+Santiago" target="_blank" rel="noopener noreferrer" class="card-link-btn">Ver en Google Maps &rarr;</a>
+                    </div>
+                </details>
+
+                <details class="card card-accordion">
+                    <summary class="card-summary">
+                        <div class="card-header-content">
+                            <div class="card-icon"><i class="fa-solid fa-building-user"></i></div>
+                            <h3>Operativos Empresas</h3>
+                            <p class="summary-desc">Convenios e intervenciones institucionales.</p>
+                        </div>
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="card-details-content">
+                        <hr>
+                        <p>Jornadas de atención podológica preventiva y curativa dentro de las dependencias de tu empresa, institución u organización.</p>
+                        <ul class="clinic-list">
+                            <li><i class="fa-solid fa-check"></i> Evaluaciones preventivas de marcha.</li>
+                            <li><i class="fa-solid fa-check"></i> Tarifas especiales y convenios corporativos.</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link-btn">Solicitar Cotización &rarr;</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <!-- Columna 1: Marca y Descripción -->
+            <div class="footer-col">
+                <h3>PodologíaVivA</h3>
+                <p>Especialistas titulados comprometidos con tu salud, movilidad y calidad de vida diaria.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-links" style="list-style: none;">
+                    <li><a href="#inicio" style="color: inherit; text-decoration: none;">Inicio</a></li>
+                    <li><a href="#servicios" style="color: inherit; text-decoration: none;">Servicios Clínicos</a></li>
+                    <li><a href="#casos" style="color: inherit; text-decoration: none;">Casos de Éxito</a></li>
+                    <li><a href="#cursos" style="color: inherit; text-decoration: none;">Cursos</a></li>
+                    <li><a href="#contacto" style="color: inherit; text-decoration: none;">Contacto y Citas</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto Directo (Botones Adaptados) -->
+            <div class="footer-col">
+                <h4>Contacto Directo</h4>
+                <div class="footer-contact-buttons">
+                    <a href="https://maps.google.com" target="_blank" class="contact-btn-social phone-btn">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Alcalde Jorge Monckeberg 1009, Ñuñoa</span>
+                    </a>
+                    
+                    <a href="mailto:podologiavivarm@gmail.com" class="contact-btn-social email-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>podologiavivarm@gmail.com</span>
+                    </a>
+                    
+                    <a href="https://wa.me/56949819428" target="_blank" class="contact-btn-social whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+56 9 4981 9428</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 PodologíaVivA. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Reserva por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Reserva por WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
