@@ -3,121 +3,437 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos y Capacitaciones | Podología VivA</title>
+    <title>Cursos y Capacitaciones Clínicas | Podología VivA</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Cursos y capacitaciones en podología clínica dictados por podóloga titulada: pie diabético, bioseguridad y esterilización, podología geriátrica y prevención de uñas encarnadas. Modalidad presencial en Ñuñoa u online.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://podologiaviva.cl/cursos.html">
+
+    <!-- Redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:site_name" content="Podología VivA">
+    <meta property="og:title" content="Cursos y Capacitaciones Clínicas | Podología VivA">
+    <meta property="og:description" content="Formación en pie diabético, bioseguridad, podología geriátrica y prevención de uñas encarnadas. Presencial en Ñuñoa u online, con diploma de participación.">
+    <meta property="og:url" content="https://podologiaviva.cl/cursos.html">
+    <meta property="og:image" content="https://podologiaviva.cl/logo.png">
+
     <!-- Google Fonts & Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png?v=1" type="image/png">
-    <meta name="description" content="Próximamente cursos y capacitaciones especializadas en podología clínica por Podología VivA.">
 </head>
 <body>
+
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
     <header class="top-bar">
         <div class="container top-bar-content">
             <div class="top-socials">
-                <a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Podologiaviva" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Podología VivA"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/Podologiaviva" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Podología VivA"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20necesito%20agendar%20una%20atenci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
             </div>
         </div>
     </header>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="logo.png" alt="Podología VivA Logo" class="logo-img">
+            <a href="index.html" class="logo" aria-label="Podología VivA, ir al inicio">
+                <img src="logo.png" alt="Podología VivA" class="logo-img" width="150" height="32">
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="casos_de_exito.html">Casos de Éxito</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="cursos.html" class="active">Cursos</a></li>
-                <li><a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" class="nav-ig"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" target="_blank" rel="noopener noreferrer" class="btn-nav"><i class="fa-brands fa-whatsapp"></i> Agendar Cita</a></li>
+                <li><a href="cursos.html" class="active" aria-current="page">Cursos</a></li>
+                <li><a href="https://www.instagram.com/podologiaviva.cl" target="_blank" rel="noopener noreferrer" class="nav-ig"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                <li><a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20necesito%20agendar%20una%20atenci%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-nav"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Agendar Cita</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="menuToggle" aria-label="Abrir menú">
-                <i class="fa-solid fa-bars"></i>
+            <button class="mobile-menu-btn" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     </nav>
 
-    <section class="coming-soon-hero">
-        <div class="container coming-soon-content">
-            <div class="coming-soon-badge">
-                <i class="fa-solid fa-graduation-cap"></i> Formación Especializada
-            </div>
-            <h1 class="coming-soon-title">Próximamente...</h1>
-            <p class="coming-soon-subtitle">
-                Estamos preparando cursos y capacitaciones clínicas con diploma de participación diseñadas para profundizar conocimientos en salud podológica y técnicas de vanguardia.
-            </p>
+    <main id="contenido">
 
-            <div class="coming-soon-card">
-                <i class="fa-solid fa-clock-rotate-left animated-icon"></i>
-                <h3>¡Estamos construyendo algo grande!</h3>
-                <p>Muy pronto publicaremos nuestro catálogo de talleres prácticos con diplomas de participación.</p>
-                <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20me%20interesa%20recibir%20información%20cuando%20lancen%20los%20cursos" target="_blank" rel="noopener noreferrer" class="btn-primary">
-                    <i class="fa-brands fa-whatsapp"></i> Notificarme por WhatsApp
-                </a>
+        <!-- ===== HERO ===== -->
+        <section class="services-hero" aria-labelledby="tituloCursos">
+            <div class="container services-hero-content">
+                <span class="badge"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Formación Clínica</span>
+                <h1 id="tituloCursos">Cursos y Capacitaciones</h1>
+                <p>Programas dictados por podóloga titulada, con enfoque clínico y práctico. Presencial en nuestra consulta de Ñuñoa u online, con diploma de participación.</p>
+                <div class="hero-btns">
+                    <a href="#catalogo" class="btn-secondary"><i class="fa-solid fa-list-check" aria-hidden="true"></i> Ver catálogo</a>
+                    <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20quisiera%20recibir%20el%20programa%20y%20las%20pr%C3%B3ximas%20fechas%20de%20los%20cursos" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pedir fechas y valores</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            
-            <!-- Columna 1: Marca y Descripción -->
-            <div class="footer-col">
-                <h3>PodologíaVivA</h3>
-                <p>Especialistas titulados comprometidos con tu salud, movilidad y calidad de vida diaria.</p>
+        <!-- ===== CATÁLOGO ===== -->
+        <section class="section" id="catalogo" aria-labelledby="tituloCatalogo">
+            <div class="container">
+                <h2 class="section-title" id="tituloCatalogo">Catálogo de cursos</h2>
+                <p class="section-subtitle">Cuatro programas activos. Filtra según a quién va dirigido.</p>
+
+                <div class="category-filter-wrapper">
+                    <div class="filter-buttons" role="group" aria-label="Filtrar cursos por público">
+                        <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+                        <button type="button" class="filter-btn" data-filter="pacientes">Pacientes y familias</button>
+                        <button type="button" class="filter-btn" data-filter="equipos">Equipos y empresas</button>
+                        <button type="button" class="filter-btn" data-filter="cuidadores">Cuidadores</button>
+                    </div>
+                </div>
+
+                <div class="cursos-grid">
+
+                    <!-- Curso 1 -->
+                    <article class="card curso-card service-item" data-category="pacientes" aria-labelledby="curso1">
+                        <div class="curso-card-head">
+                            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-droplet"></i></span>
+                            <span class="curso-tag">Pacientes y familias</span>
+                        </div>
+
+                        <h3 id="curso1">Cuidado del pie diabético: prevención y autocuidado</h3>
+                        <p class="curso-desc">Enseñamos a revisar el pie en casa, reconocer señales de alarma tempranas y mantener una rutina de cuidado segura. Pensado para personas con diabetes y para quienes las acompañan a diario.</p>
+
+                        <ul class="clinic-list curso-temario">
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Inspección diaria y control de puntos de presión</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Señales de alerta que requieren consulta inmediata</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Elección de calzado, calcetines y humectación correcta</li>
+                        </ul>
+
+                        <ul class="curso-meta">
+                            <li><i class="fa-regular fa-clock" aria-hidden="true"></i> 3 horas (una sesión)</li>
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial en Ñuñoa u online</li>
+                            <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> Diploma de participación</li>
+                        </ul>
+
+                        <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20me%20interesa%20inscribirme%20en%20el%20curso%20de%20Cuidado%20del%20Pie%20Diab%C3%A9tico" target="_blank" rel="noopener noreferrer" class="btn-primary curso-btn" aria-label="Inscribirme por WhatsApp en el curso de cuidado del pie diabético">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Inscribirme
+                        </a>
+                    </article>
+
+                    <!-- Curso 2 -->
+                    <article class="card curso-card service-item" data-category="equipos" aria-labelledby="curso2">
+                        <div class="curso-card-head">
+                            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-shield-virus"></i></span>
+                            <span class="curso-tag">Equipos y empresas</span>
+                        </div>
+
+                        <h3 id="curso2">Fundamentos de bioseguridad y esterilización</h3>
+                        <p class="curso-desc">Protocolo completo de manejo de instrumental para salones de belleza y centros de estética: desde el lavado hasta el almacenamiento estéril, con los criterios que exige la autoridad sanitaria.</p>
+
+                        <ul class="clinic-list curso-temario">
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Cadena de esterilización paso a paso</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Uso de autoclave, empaques e indicadores de control</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Registro, trazabilidad y manejo de residuos</li>
+                        </ul>
+
+                        <ul class="curso-meta">
+                            <li><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 horas (una sesión)</li>
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> En tu local, en Ñuñoa u online</li>
+                            <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> Diploma de participación</li>
+                        </ul>
+
+                        <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20me%20interesa%20inscribirme%20en%20el%20curso%20de%20Bioseguridad%20y%20Esterilizaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-primary curso-btn" aria-label="Inscribirme por WhatsApp en el curso de bioseguridad y esterilización">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Inscribirme
+                        </a>
+                    </article>
+
+                    <!-- Curso 3 -->
+                    <article class="card curso-card service-item" data-category="cuidadores" aria-labelledby="curso3">
+                        <div class="curso-card-head">
+                            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-person-cane"></i></span>
+                            <span class="curso-tag">Cuidadores</span>
+                        </div>
+
+                        <h3 id="curso3">Podología geriátrica: atención del adulto mayor</h3>
+                        <p class="curso-desc">Cómo cuidar los pies de una persona mayor sin causar daño: piel frágil, uñas engrosadas, movilidad reducida y riesgo de caídas. Dirigido a cuidadores, familiares y personal de residencias.</p>
+
+                        <ul class="clinic-list curso-temario">
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Cambios del pie asociados a la edad</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Higiene, corte seguro e hidratación de piel frágil</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Prevención de caídas y apoyo a la movilidad</li>
+                        </ul>
+
+                        <ul class="curso-meta">
+                            <li><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 horas (una sesión)</li>
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial en Ñuñoa u online</li>
+                            <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> Diploma de participación</li>
+                        </ul>
+
+                        <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20me%20interesa%20inscribirme%20en%20el%20curso%20de%20Podolog%C3%ADa%20Geri%C3%A1trica" target="_blank" rel="noopener noreferrer" class="btn-primary curso-btn" aria-label="Inscribirme por WhatsApp en el curso de podología geriátrica">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Inscribirme
+                        </a>
+                    </article>
+
+                    <!-- Curso 4 -->
+                    <article class="card curso-card service-item" data-category="pacientes" aria-labelledby="curso4">
+                        <div class="curso-card-head">
+                            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-hand-holding-medical"></i></span>
+                            <span class="curso-tag">Taller práctico</span>
+                        </div>
+
+                        <h3 id="curso4">Prevención de uñas encarnadas e higiene podológica</h3>
+                        <p class="curso-desc">Taller con demostración en vivo: por qué se encarna una uña, cómo cortarla correctamente y qué hábitos de higiene evitan que el problema vuelva a aparecer.</p>
+
+                        <ul class="clinic-list curso-temario">
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Técnica de corte y perfilado ungueal</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Errores frecuentes que provocan encarnación</li>
+                            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Rutina de higiene y cuándo consultar a tiempo</li>
+                        </ul>
+
+                        <ul class="curso-meta">
+                            <li><i class="fa-regular fa-clock" aria-hidden="true"></i> 2 horas (taller práctico)</li>
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial en Ñuñoa, cupos reducidos</li>
+                            <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> Diploma de participación</li>
+                        </ul>
+
+                        <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20me%20interesa%20inscribirme%20en%20el%20taller%20de%20Prevenci%C3%B3n%20de%20U%C3%B1as%20Encarnadas" target="_blank" rel="noopener noreferrer" class="btn-primary curso-btn" aria-label="Inscribirme por WhatsApp en el taller de prevención de uñas encarnadas">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Inscribirme
+                        </a>
+                    </article>
+
+                </div>
             </div>
+        </section>
 
-            <!-- Columna 2: Navegación -->
-            <div class="footer-col">
-                <h4>Navegación</h4>
-                <ul class="footer-links" style="list-style: none;">
-                    <li><a href="#inicio" style="color: inherit; text-decoration: none;">Inicio</a></li>
-                    <li><a href="#servicios" style="color: inherit; text-decoration: none;">Servicios Clínicos</a></li>
-                    <li><a href="#casos" style="color: inherit; text-decoration: none;">Casos de Éxito</a></li>
-                    <li><a href="#cursos" style="color: inherit; text-decoration: none;">Cursos</a></li>
-                    <li><a href="#contacto" style="color: inherit; text-decoration: none;">Contacto y Citas</a></li>
-                </ul>
+        <!-- ===== CÓMO INSCRIBIRSE ===== -->
+        <section class="section bg-light" id="inscripcion" aria-labelledby="tituloInscripcion">
+            <div class="container">
+                <h2 class="section-title" id="tituloInscripcion">Cómo inscribirse</h2>
+                <p class="section-subtitle">Tres pasos, sin formularios largos</p>
+
+                <ol class="pasos-inscripcion">
+                    <li class="card paso-card">
+                        <span class="paso-num" aria-hidden="true">1</span>
+                        <div>
+                            <h3>Escríbenos por WhatsApp</h3>
+                            <p>Cuéntanos qué curso te interesa y para cuántas personas. El botón de cada tarjeta ya lleva el mensaje escrito.</p>
+                        </div>
+                    </li>
+                    <li class="card paso-card">
+                        <span class="paso-num" aria-hidden="true">2</span>
+                        <div>
+                            <h3>Confirmamos fecha y modalidad</h3>
+                            <p>Te enviamos las próximas fechas disponibles, el valor y si conviene hacerlo presencial en Ñuñoa u online.</p>
+                        </div>
+                    </li>
+                    <li class="card paso-card">
+                        <span class="paso-num" aria-hidden="true">3</span>
+                        <div>
+                            <h3>Reservas tu cupo</h3>
+                            <p>Al finalizar recibes el material de apoyo y tu diploma de participación digital.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
+        </section>
 
-            <!-- Columna 3: Contacto Directo (Botones Adaptados) -->
-            <div class="footer-col">
-                <h4>Contacto Directo</h4>
-                <div class="footer-contact-buttons">
-                    <a href="https://maps.google.com" target="_blank" class="contact-btn-social phone-btn">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Alcalde Jorge Monckeberg 1009, Ñuñoa</span>
-                    </a>
-                    
-                    <a href="mailto:podologiavivarm@gmail.com" class="contact-btn-social email-btn">
-                        <i class="fas fa-envelope"></i>
-                        <span>podologiavivarm@gmail.com</span>
-                    </a>
-                    
-                    <a href="https://wa.me/56949819428" target="_blank" class="contact-btn-social whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>+56 9 4981 9428</span>
+        <!-- ===== CAPACITACIONES A MEDIDA ===== -->
+        <section class="section" id="empresas" aria-labelledby="tituloEmpresas">
+            <div class="container">
+                <div class="card cta-empresas">
+                    <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-people-group"></i></span>
+                    <h2 id="tituloEmpresas">Capacitaciones a medida</h2>
+                    <p>Armamos el programa según tu equipo: residencias de adultos mayores, salones de belleza, centros de estética, empresas con operativos de salud o juntas de vecinos. Nosotros vamos a tu lugar.</p>
+                    <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20quisiera%20cotizar%20una%20capacitaci%C3%B3n%20a%20medida%20para%20mi%20equipo" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Cotizar una capacitación a medida por WhatsApp">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Cotizar capacitación
                     </a>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- ===== PREGUNTAS FRECUENTES ===== -->
+        <section class="section bg-light" id="faq" aria-labelledby="tituloFaq">
+            <div class="container">
+                <h2 class="section-title" id="tituloFaq">Preguntas frecuentes</h2>
+                <p class="section-subtitle">Lo que más nos consultan antes de inscribirse</p>
 
-        <div class="footer-bottom">
-            <p>&copy; 2026 PodologíaVivA. Todos los derechos reservados.</p>
+                <details class="card card-accordion">
+                    <summary>
+                        <span class="card-summary">
+                            <span class="card-header-content">
+                                <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-user-check"></i></span>
+                                <h3>¿Necesito formación previa en salud?</h3>
+                            </span>
+                            <span class="accordion-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                        </span>
+                    </summary>
+                    <div class="card-details-content">
+                        No. Los cursos de pie diabético, geriatría y uñas encarnadas están escritos en lenguaje simple para pacientes, familiares y cuidadores. El de bioseguridad está orientado a equipos que ya trabajan con instrumental.
+                    </div>
+                </details>
+
+                <details class="card card-accordion">
+                    <summary>
+                        <span class="card-summary">
+                            <span class="card-header-content">
+                                <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></span>
+                                <h3>¿Entregan diploma?</h3>
+                            </span>
+                            <span class="accordion-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                        </span>
+                    </summary>
+                    <div class="card-details-content">
+                        Sí. Todos los programas incluyen diploma de participación digital emitido por Podología VivA, además del material de apoyo del curso.
+                    </div>
+                </details>
+
+                <details class="card card-accordion">
+                    <summary>
+                        <span class="card-summary">
+                            <span class="card-header-content">
+                                <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></span>
+                                <h3>¿Cómo funciona la modalidad online?</h3>
+                            </span>
+                            <span class="accordion-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                        </span>
+                    </summary>
+                    <div class="card-details-content">
+                        Se dicta en vivo por videollamada, con espacio para preguntas durante toda la sesión. El taller práctico de uñas encarnadas se realiza solo de forma presencial, porque incluye demostración con instrumental.
+                    </div>
+                </details>
+
+                <details class="card card-accordion">
+                    <summary>
+                        <span class="card-summary">
+                            <span class="card-header-content">
+                                <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
+                                <h3>¿Puedo inscribir a un grupo?</h3>
+                            </span>
+                            <span class="accordion-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                        </span>
+                    </summary>
+                    <div class="card-details-content">
+                        Sí. Para grupos coordinamos fecha exclusiva y podemos dictar el curso en tu local o institución dentro de Santiago. Escríbenos y te enviamos la propuesta.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <h3>PodologíaVivA</h3>
+                    <p>Especialistas titulados comprometidos con tu salud, movilidad y calidad de vida diaria.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links" style="list-style: none;">
+                        <li><a href="index.html" style="color: inherit; text-decoration: none;">Inicio</a></li>
+                        <li><a href="servicios.html" style="color: inherit; text-decoration: none;">Servicios Clínicos</a></li>
+                        <li><a href="casos_de_exito.html" style="color: inherit; text-decoration: none;">Casos de Éxito</a></li>
+                        <li><a href="cursos.html" style="color: inherit; text-decoration: none;">Cursos</a></li>
+                        <li><a href="contacto.html" style="color: inherit; text-decoration: none;">Contacto y Citas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto Directo</h4>
+                    <div class="footer-contact-buttons">
+                        <a href="https://maps.google.com/?q=Alcalde+Jorge+Monckeberg+1009,+Nunoa,+Santiago" target="_blank" rel="noopener noreferrer" class="contact-btn-social phone-btn">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Alcalde Jorge Monckeberg 1009, Ñuñoa</span>
+                        </a>
+
+                        <a href="mailto:podologiavivarm@gmail.com" class="contact-btn-social email-btn">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>podologiavivarm@gmail.com</span>
+                        </a>
+
+                        <a href="https://wa.me/56949819428" target="_blank" rel="noopener noreferrer" class="contact-btn-social whatsapp-btn">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span>+56 9 4981 9428</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PodologíaVivA. Todos los derechos reservados.</p>
+            </div>
         </div>
-    </div>
-</footer>
-    <a href="https://wa.me/56949819428?text=Hola%20Podología%20VivA,%20necesito%20agendar%20una%20atención" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Reserva por WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-        <span>Reserva por WhatsApp</span>
+    </footer>
+
+    <a href="https://wa.me/56949819428?text=Hola%20Podolog%C3%ADa%20VivA%2C%20quisiera%20informaci%C3%B3n%20sobre%20los%20cursos" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Consultar por los cursos en WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <span>Consultar cursos</span>
     </a>
+
+    <!-- Datos estructurados para buscadores -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Course",
+          "name": "Cuidado del pie diabético: prevención y autocuidado",
+          "description": "Curso de prevención y autocuidado del pie diabético para pacientes y familiares.",
+          "inLanguage": "es-CL",
+          "provider": { "@type": "Organization", "name": "Podología VivA", "url": "https://podologiaviva.cl" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": ["Onsite", "Online"],
+            "courseWorkload": "PT3H",
+            "location": { "@type": "Place", "name": "Podología VivA", "address": "Alcalde Jorge Monckeberg 1009, Ñuñoa, Santiago, Chile" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Fundamentos de bioseguridad y esterilización",
+          "description": "Capacitación en protocolos de bioseguridad y esterilización de instrumental para salones de belleza y centros de estética.",
+          "inLanguage": "es-CL",
+          "provider": { "@type": "Organization", "name": "Podología VivA", "url": "https://podologiaviva.cl" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": ["Onsite", "Online"],
+            "courseWorkload": "PT4H",
+            "location": { "@type": "Place", "name": "Podología VivA", "address": "Alcalde Jorge Monckeberg 1009, Ñuñoa, Santiago, Chile" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Podología geriátrica: atención del adulto mayor",
+          "description": "Curso sobre cuidado podológico del adulto mayor dirigido a cuidadores, familiares y personal de residencias.",
+          "inLanguage": "es-CL",
+          "provider": { "@type": "Organization", "name": "Podología VivA", "url": "https://podologiaviva.cl" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": ["Onsite", "Online"],
+            "courseWorkload": "PT4H",
+            "location": { "@type": "Place", "name": "Podología VivA", "address": "Alcalde Jorge Monckeberg 1009, Ñuñoa, Santiago, Chile" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Prevención de uñas encarnadas e higiene podológica",
+          "description": "Taller práctico sobre técnica de corte ungueal, higiene podológica y prevención de uñas encarnadas.",
+          "inLanguage": "es-CL",
+          "provider": { "@type": "Organization", "name": "Podología VivA", "url": "https://podologiaviva.cl" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Onsite",
+            "courseWorkload": "PT2H",
+            "location": { "@type": "Place", "name": "Podología VivA", "address": "Alcalde Jorge Monckeberg 1009, Ñuñoa, Santiago, Chile" }
+          }
+        }
+      ]
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>
